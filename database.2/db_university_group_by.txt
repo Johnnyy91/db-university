@@ -1,0 +1,20 @@
+.POINT 1
+
+SELECT COUNT(id) AS `n.iscritti`, YEAR(enrolment_date)
+FROM `students` 
+GROUP BY YEAR(enrolment_date);
+
+.POINT 2
+
+SELECT COUNT(id) AS `n.insegnanti` , `office_number`
+FROM `teachers`
+GROUP BY(`office_number`);
+
+.POINT 3
+
+SELECT AVG(`vote`) AS `media_student`,`exam_id`
+FROM `exam_student`
+GROUP BY(`exam_id`);
+
+.POINT 4
+
