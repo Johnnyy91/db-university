@@ -18,3 +18,6 @@ GROUP BY(`exam_id`);
 
 .POINT 4
 
+SELECT COUNT(id), `department_id`
+FROM `degrees`
+GROUP BY `department_id`
