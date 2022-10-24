@@ -20,8 +20,7 @@ if($result = $connection->query($sql)){
     if($result->num_rows > 0){
         
     while($n_students = $result->fetch_assoc()){
-        echo "<h3>". $n_students['name'] . " " . $n_students['surname']. " " .$n_students['date_of_birth']. "</h3>"; 
-        
+        echo "<h3>". $n_students['name'] . "  " . $n_students['surname']. " / " .$n_students['date_of_birth']. " / " . $n_students['email']. "</h3>"; 
     }
     }
 }
