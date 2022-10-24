@@ -10,7 +10,7 @@ WHERE degrees.name LIKE '%economia';
 SELECT departments.name , degrees.name
 FROM `departments`
 INNER JOIN `degrees`
-on departments.id = degrees.department_id
+ON departments.id = degrees.department_id
 WHERE (departments.name like "%neuro%") 
 AND degrees.level = 'magistrale';
 
@@ -22,8 +22,7 @@ INNER JOIN course_teacher
 ON courses.id = course_teacher.course_id
 INNER JOIN teachers
 ON course_teacher.teacher_id = teachers.id
-WHERE
-teachers.id = 44;
+WHERE teachers.id = 44;
 
 .POINT 4
 
